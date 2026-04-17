@@ -18,5 +18,55 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- nav -->
+    <nav id="section-nav" class="p-6 relative container mx-auto">
+      <!-- container for all nav items -->
+      <div
+        class="text-grayishViolet font-bold flex w-full items-center justify-between"
+      >
+        <!-- logo and menu container -->
+        <div class="space-x-16 flex items-center">
+          <img src="./images/logo.svg" alt="" />
+          <!-- menu items -->
+          <div class="space-x-8 lg:flex hidden">
+            <a href="#" class="hover:text-veryDarkViolet">Features </a>
+            <a href="#" class="hover:text-veryDarkViolet">Pricing </a>
+            <a href="#" class="hover:text-veryDarkViolet">Resources </a>
+          </div>
+        </div>
+        <!-- btns container -->
+        <div class="space-x-6 lg:flex hidden items-center">
+          <a href="#" class="hover:text-veryDarkViolet">Login</a>
+          <button
+            class="bg-cyan text-white py-3 px-8 rounded-full hover:opacity-70 focus:outline-none"
+          >
+            Sign Up
+          </button>
+        </div>
+        <!-- menu btn -->
+        <button
+          id="menu-btn"
+          class="hamburger lg:hidden block focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile menu container -->
+      <div
+        id="menu"
+        class="bg-darkViolet left-6 top-20 right-6 p-6 rounded-md absolute hidden"
+      >
+        <div class="text-white font-bold space-y-6 flex flex-col text-center">
+          <a href="#" class="w-full">Features</a>
+          <a href="#" class="w-full">Pricing</a>
+          <a href="#" class="w-full">Resources</a>
+          <a href="#" class="pt-6 w-full border-t">Login</a>
+          <button class="bg-cyan py-3 rounded-full">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
